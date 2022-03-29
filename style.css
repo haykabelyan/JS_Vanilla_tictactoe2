@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    border: none; outline: none; 
+    transition: all 0.2s linear;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.message{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.tictactoe-game{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #0a0a0a;
+    gap: 0.5rem;
+}
+
+.cell{
+    width: 8rem;
+    height: 8rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.modal{
+    position: absolute;
+    top: -120%; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal.active{
+    top: 0; bottom: 0;
+}
+
+.modal h2{
+    font-size: 3rem;
+    background: linear-gradient(to right, #343434, #ffffff, #111);
+    padding: 2rem; margin: 2rem;
+    border-radius: 0.5rem;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-restart {
+    background-image: linear-gradient(
+      to right,
+      #314755 0%,
+      #26a0da 51%,
+      #314755 100%
+    );
+  }
+  
+  .btn-quit {
+    background-image: linear-gradient(
+      to right,
+      #d31027 0%,
+      #5c0711 51%,
+      #ea384d 100%
+    );
+  }
+  
